@@ -36,7 +36,6 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
           page_number: req.query.page || 0,
           max_results: req.query.maxResults || 10,
           format: "json",
-          region: "MN",
         },
         headers: { Authorization: `Bearer ${token}` },
       }
